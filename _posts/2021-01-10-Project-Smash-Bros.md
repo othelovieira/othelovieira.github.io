@@ -1,5 +1,11 @@
 ## Super Smash Bros. Ultimate – Game Character and Game Listing
 
+A couple of weeks ago “Pro Gamer” Dude was gifted with Super Smash Bros. Ultimate for his Nintendo Switch Lite.
+
+We both agree that it is one of the best games on the switch. From my side I love the roster of fighters, a question we always ask is in which game did the fighter originally appear in?
+
+That is why I put together the below chart to keep as a reference to answer that question.
+
 | No. |                                                                                                        |                    Fighter Name                   |                     First Game Appearance                     |
 |:---:|:------------------------------------------------------------------------------------------------------:|:-------------------------------------------------:|:-------------------------------------------------------------:|
 | 1   | ![Mario](/assets/images/prj_smash/001_Mario.jpg)                                                       | Mario                                             | Donkey Kong                                                   |
