@@ -38,3 +38,5 @@ ForEach ($thing in $things) {
 | No.  |   |Fighter Name|First Game Appearnce|
 |:-:|:-:|:-:|:-:|
 |1  |![Mario](/assets/images/001_Mario.jpg)| Mario | Donkey Kong |
+|2  |![Donkey Kong](/assets/images/002_Donkey_Kong.jpg) | Donkey Kong | Donkey Kong Country |
+
