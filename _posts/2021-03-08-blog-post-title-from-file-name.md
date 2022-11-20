@@ -17,4 +17,6 @@ This is a sample blog post. You can talk about all sorts of fun things here.
 |3  |![Link](/assets/images/prj_smash/003_Link.jpg) | Link | The Legend of Zelda |
 |4  |![Samus](/assets/images/prj_smash/004_Samus.jpg) | Samus | Metroid |
 |4e  |![Dark Samus](/assets/images/prj_smash/004e_Dark_Samus.jpg) | Dark Samus | Metroid Prime (Echo Fighter) |
-
+|5  |![Yoshi](/assets/images/prj_smash/005_Yoshi.jpg) | Yoshi | Super Mario World |
+|6  |![Kirby](/assets/images/prj_smash/006_Kirby.jpg) | Kirby | Kirby's Dream Land |
+|7  |![Fox](/assets/images/prj_smash/007_Fox_McCloud.jpg) | Fox | Star Fox |
