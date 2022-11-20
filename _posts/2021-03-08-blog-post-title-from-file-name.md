@@ -27,5 +27,9 @@ This is a sample blog post. You can talk about all sorts of fun things here.
 |12  |![Jigglypuff](/assets/images/prj_smash/012_Jigglypuff.jpg) | Jiggly Puff | Pokémon Red and Blue |
 |13  |![Princess Peach](/assets/images/prj_smash/013_Peach.jpg) | Princess Peach | Super Mario Bros. |
 |13e  |![Princess Daisy](/assets/images/prj_smash/013e_Daisy.jpg) | Princess Daisy | Super Mario Land (Echo Fighter) |
-|14  |![Bowser](/assets/images/prj_smash/014_Bowser.jpg) | Bowser | super Mario Bros. |
+|14  |![Bowser](/assets/images/prj_smash/014_Bowser.jpg) | Bowser | Super Mario Bros. |
 |15  |![Ice Climbers](/assets/images/prj_smash/015_Ice_Climbers.jpg) | Ice Climbers | Ice Climber |
+|16  |![Sheik](/assets/images/prj_smash/016_Sheik.jpg) | Sheik | The Lengend of Zelda: Ocarina of Time |
+|17  |![Princess Zelda](/assets/images/prj_smash/017_Princess_Zelda.jpg) | Princess Zelda | The Legend of Zelda. |
+|18  |![Dr. Mario](/assets/images/prj_smash/018_Dr_Mario.jpg) | Dr. Mario | Dr. Mario |
+|19  |![Pichu](/assets/images/prj_smash/019_Pichu.jpg) | Pichu | Pokémon Gold and Silver |
