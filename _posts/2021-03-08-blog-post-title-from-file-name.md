@@ -30,3 +30,7 @@ ForEach ($thing in $things) {
     Write-Output "It highlights it using the GitHub style"
 }
 ```
+| First Header  | Second Header |
+| ------------- | ------------- |
+| ![Book logo](/_images/001_Mario.jpg) | Content Cell  |
+| Content Cell  | Content Cell  |
