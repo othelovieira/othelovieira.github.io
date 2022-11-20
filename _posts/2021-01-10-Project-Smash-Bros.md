@@ -1,4 +1,4 @@
-## Super Smash Bros. Ultimate – Game Character and Game Listing
+### Super Smash Bros. Ultimate – Game Character and Game Listing
 
 A couple of weeks ago “Pro Gamer” Dude was gifted with Super Smash Bros. Ultimate for his Nintendo Switch Lite.
 
