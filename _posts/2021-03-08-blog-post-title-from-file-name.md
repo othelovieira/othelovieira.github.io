@@ -32,5 +32,5 @@ ForEach ($thing in $things) {
 ```
 | First Header  | Second Header |
 | ------------- | ------------- |
-| ![Book logo](/_images/001_Mario.jpg) | Content Cell  |
+| ![Mario](/assets/images/001_Mario.jpg) | Content Cell  |
 | Content Cell  | Content Cell  |
