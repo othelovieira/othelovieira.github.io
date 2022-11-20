@@ -1,4 +1,4 @@
-## Wireframe Gaming Magazine Coding Ideas – Source Code Edition
+### Wireframe Gaming Magazine Coding Ideas – Source Code Edition
 
 Latest Issue Added: Issue 68
 
