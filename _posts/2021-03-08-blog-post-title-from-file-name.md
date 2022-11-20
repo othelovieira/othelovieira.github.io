@@ -35,6 +35,6 @@ ForEach ($thing in $things) {
 | ![Mario](/assets/images/001_Mario.jpg) | Content Cell  |
 | Content Cell  | Content Cell  |
 
-|   |   |   |
-|:-:|:-:|:-:|
-|1  |![Mario](/assets/images/001_Mario.jpg)| Mario|
+| No.  |   |Fighter Name|First Game Appearnce|
+|:-:|:-:|:-:|:-:|
+|1  |![Mario](/assets/images/001_Mario.jpg)| Mario | Donkey Kong |
