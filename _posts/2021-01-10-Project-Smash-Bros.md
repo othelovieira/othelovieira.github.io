@@ -26,3 +26,9 @@
 |20  |![Falco](/assets/images/prj_smash/020_Falco_Lombardi.jpg) | Falco | Star Fox |
 |21  |![Martha](/assets/images/prj_smash/021_Marth.jpg) | Martha | Fire Emblem: Shadow Dragon and Blade of Light |
 |21e  |![Lucina](/assets/images/prj_smash/021e_Lucina.jpg) | Lucina | Fire Emblem Fates (Echo Fighter) |
+|22  |![Young Link](/assets/images/prj_smash/022_Young_Link.jpg) | Young Link | The Legend of Zelda|
+|23  |![Ganondorf](/assets/images/prj_smash/023_Ganondorf.jpg) | Ganondorf | The Legend of Zelda |
+|24 |![Mewtwo](/assets/images/prj_smash/024_Mewtwo.jpg) | Mewtwo | Pokémon Red and Blue |
+|25 |![Roy](/assets/images/prj_smash/025_Roy.jpg) | Roy | Fire Emblem: The Binding Blade |
+|26 |![Mr. Game & Watch](/assets/images/prj_smash/026_Mr_Game_&_Watch.jpg) | Mr. Game & Watch | Ball |
+|27 |![Meta Knight](/assets/images/prj_smash/027_Metaknight.jpg) | Meta Knight | Kirby's Adventure |
