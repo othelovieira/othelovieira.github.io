@@ -23,3 +23,6 @@
 |17  |![Princess Zelda](/assets/images/prj_smash/017_Princess_Zelda.jpg) | Princess Zelda | The Legend of Zelda. |
 |18  |![Dr. Mario](/assets/images/prj_smash/018_Dr_Mario.jpg) | Dr. Mario | Dr. Mario |
 |19  |![Pichu](/assets/images/prj_smash/019_Pichu.jpg) | Pichu | Pokémon Gold and Silver |
+|20  |![Falco](/assets/images/prj_smash/020_Falco_Lombardi.jpg) | Falco | Star Fox |
+|21  |![Martha](/assets/images/prj_smash/021_Marth.jpg) | Martha | Fire Emblem: Shadow Dragon and Blade of Light |
+|21e  |![Lucina](/assets/images/prj_smash/021e_Lucina.jpg) | Lucina | Fire Emblem Fates (Echo Fighter) |
