@@ -2,7 +2,7 @@
 
 Latest Issue Added: Issue 68
 
-This past weekend I decided to go through my Wireframe Gaming Magazine back issues looking for coding ideas.
+This past weekend I decided to go through my [Wireframe Gaming Magazine](https://wireframe.raspberrypi.com/issues) back issues looking for coding ideas.
 
 I put together the below table of all the source code articles across all the issues in case someone out there is also looking for some inspiration.
 
