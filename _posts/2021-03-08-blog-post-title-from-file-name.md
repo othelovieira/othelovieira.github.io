@@ -34,3 +34,7 @@ ForEach ($thing in $things) {
 | ------------- | ------------- |
 | ![Mario](/assets/images/001_Mario.jpg) | Content Cell  |
 | Content Cell  | Content Cell  |
+
+|   |   |   |
+|:-:|:-:|:-:|
+|1  |![Mario](/assets/images/001_Mario.jpg)| Mario|
