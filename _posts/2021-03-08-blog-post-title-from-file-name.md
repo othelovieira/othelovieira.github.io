@@ -20,3 +20,12 @@ This is a sample blog post. You can talk about all sorts of fun things here.
 |5  |![Yoshi](/assets/images/prj_smash/005_Yoshi.jpg) | Yoshi | Super Mario World |
 |6  |![Kirby](/assets/images/prj_smash/006_Kirby.jpg) | Kirby | Kirby's Dream Land |
 |7  |![Fox](/assets/images/prj_smash/007_Fox_McCloud.jpg) | Fox | Star Fox |
+|8  |![Pikachu](/assets/images/prj_smash/008_Pikachu.jpg) | Pikachu | Pokémon Red and Blue |
+|9  |![Luigi](/assets/images/prj_smash/009_Luigi.jpg) | Luigi | Mario Bros. |
+|10  |![Ness](/assets/images/prj_smash/010_Ness.jpg) | Ness | EarthBound. |
+|11  |![Captain Falcon](/assets/images/prj_smash/011_Captain_Falcon.jpg) | Captain Falcon | F-Zero |
+|12  |![Jigglypuff](/assets/images/prj_smash/012_Jigglypuff.jpg) | Jiggly Puff | Pokémon Red and Blue |
+|13  |![Princess Peach](/assets/images/prj_smash/013_Peach.jpg) | Princess Peach | Super Mario Bros. |
+|13e  |![Princess Daisy](/assets/images/prj_smash/013e_Daisy.jpg) | Princess Daisy | Super Mario Land (Echo Fighter) |
+|14  |![Bowser](/assets/images/prj_smash/014_Bowser.jpg) | Bowser | super Mario Bros. |
+|15  |![Ice Climbers](/assets/images/prj_smash/015_Ice_Climbers.jpg) | Ice Climbers | Ice Climber |
