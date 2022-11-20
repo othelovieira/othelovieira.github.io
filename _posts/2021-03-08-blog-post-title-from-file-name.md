@@ -10,33 +10,11 @@ This is a sample blog post. You can talk about all sorts of fun things here.
 
 ### This is a header
 
-#### Some T-SQL Code
-
-```tsql
-SELECT This, [Is], A, Code, Block -- Using SSMS style syntax highlighting
-    , REVERSE('abc')
-FROM dbo.SomeTable s
-    CROSS JOIN dbo.OtherTable o;
-```
-
-#### Some PowerShell Code
-
-```powershell
-Write-Host "This is a powershell Code block";
-
-# There are many other languages you can use, but the style has to be loaded first
-
-ForEach ($thing in $things) {
-    Write-Output "It highlights it using the GitHub style"
-}
-```
-| First Header  | Second Header |
-| ------------- | ------------- |
-| ![Mario](/assets/images/001_Mario.jpg) | Content Cell  |
-| Content Cell  | Content Cell  |
-
 | No.  |   |Fighter Name|First Game Appearnce|
 |:-:|:-:|:-:|:-:|
-|1  |![Mario](/assets/images/001_Mario.jpg)| Mario | Donkey Kong |
-|2  |![Donkey Kong](/assets/images/002_Donkey_Kong.jpg) | Donkey Kong | Donkey Kong Country |
+|1  |![Mario](/assets/images/prj_smash/001_Mario.jpg)| Mario | Donkey Kong |
+|2  |![Donkey Kong](/assets/images/prj_smash/002_Donkey_Kong.jpg) | Donkey Kong | Donkey Kong Country |
+|3  |![Link](/assets/images/prj_smash/003_Link.jpg) | Link | The Legend of Zelda |
+|4  |![Samus](/assets/images/prj_smash/004_Samus.jpg) | Samus | Metroid |
+|4e  |![Dark Samus](/assets/images/prj_smash/004e_Dark_Samus.jpg) | Dark Samus | Metroid Prime (Echo Fighter) |
 
