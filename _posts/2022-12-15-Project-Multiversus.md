@@ -1,8 +1,8 @@
 ### Warner Bros. Multiversus – Roster Edition
 
 | No. |                                                                                  | Fighter Name       | Type          | First Apperance                                                           |
-|-----|----------------------------------------------------------------------------------|--------------------|---------------|---------------------------------------------------------------------------|
-| 1   | ![Wonder Woman](/assets/images/prj_multiversus/001_wonder_woman.jpg)             | Wonder Woman       | Tank          | All Star Comic #8 (October 1941)                                          |
+|:---:|:--------------------------------------------------------------------------------:|:------------------:|:-------------:|:-------------------------------------------------------------------------:|
+| 1   | ![Wonder Woman](/assets/images/prj_multiversus/001_wonder_woman.jpg)             | Wonder Woman      | Tank          | All Star Comic #8 (October 1941)                                          |
 | 2   | ![Tom And Jerry](/assets/images/prj_multiversus/002_tom_and_jerry.jpg)           | Tom And Jerry      | Mage / Ranged | "Puss Gets The Boot" (1940)                                               |
 | 3   | ![Superman](/assets/images/prj_multiversus/003_superman.jpg)                     | Superman           | Tank          | Action Comics #1                                                          |
 | 4   | ![Steven Universe](/assets/images/prj_multiversus/004_steven.jpg)                | Steven Universe    | Support       | Steven Universe - "Pilot" (May 2013)                                      |
