@@ -1,6 +1,6 @@
 ### Apple Command Line Tools - Field Notes
 
-The below is based on an Intel based MacBook Air (MacBookAir7,2) running macOS Monterey (v12.6.2).
+The below is based on an Intel based MacBook running macOS Monterey (v12.6.2).
 
 
 #### Check if the Xcode Command Line Tools are installed.
