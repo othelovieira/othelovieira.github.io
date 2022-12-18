@@ -2,6 +2,7 @@
 
 The below is based on an Intel based MacBook Air (MacBookAir7,2) running macOS Monterey (v12.6.2).
 
+
 #### Check if the Xcode Command Line Tools are installed.
 
 ```
@@ -13,6 +14,7 @@ If you get something similar to the below the Tools are installed
 ```
 /Library/Developer/CommandLineTools
 ```
+
 
 #### Check the version installed.
 
@@ -31,11 +33,13 @@ InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 
 Looking at the above output I have version 21.6.0 installed
 
+
 #### Install Xcode Command Line Tools.
 
 ```
 % xcode-select —install
 ```
+
 
 #### Uninstall/Reinstall the Xcode Command Line Tools.
 
