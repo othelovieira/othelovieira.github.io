@@ -1,6 +1,6 @@
 ### Wireframe Gaming Magazine Coding Ideas – Source Code Edition
 
-Latest Issue Added: Issue 69
+Latest Issue Added: Issue 70
 
 This past weekend I decided to go through my [Wireframe Gaming Magazine](https://wireframe.raspberrypi.com/issues) back issues looking for coding ideas.
 
@@ -77,3 +77,4 @@ I put together the below table of all the source code articles across all the is
 | 67    | Elite                                | Make a wireframe spaceship straight out of 1984’s Elite                 |
 | 68    | N/A                                  | Create your own pixel editor                                            |
 | 69    | Monkey Island                        | Code your own point-and-click homage to Monkey Island                   |
+| 70    | Rampart                              | Program your own Rampart-style tower defence game                       |
