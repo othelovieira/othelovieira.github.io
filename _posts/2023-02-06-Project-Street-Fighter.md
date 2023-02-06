@@ -2,39 +2,39 @@
 
 |    Fighter   |   | Nationality |  Fighting Style  |        Special Moves       |
 |:------------:|:-:|:-----------:|:----------------:|:--------------------------:|
-|      Ryu     |   |   Japanese  |  Shotokan Karate |          Fireball          |
+|      Ryu     |  ![Ryu](/assets/images/prj_streetfighter/001_Ryu.png)  |   Japanese  |  Shotokan Karate |          Fireball          |
 |              |   |             |                  |        Dragon Punch        |
 |              |   |             |                  |       Hurricane Kick       |
-| Edmond Honda |   |   Japanese  |       Sumo       |      Hundred Hand Slap     |
+| Edmond Honda |  ![Honda](/assets/images/prj_streetfighter/002_Honda.png) |   Japanese  |       Sumo       |      Hundred Hand Slap     |
 |              |   |             |                  |       Sumo Head Butt       |
 |              |   |             |                  |         Sumo Smash         |
-|    Blanka    |   |  Brazilian  |      Jungle      |         Electricity        |
+|    Blanka    |  ![Blanka](/assets/images/prj_streetfighter/003_Blanka.png)  |  Brazilian  |      Jungle      |         Electricity        |
 |              |   |             |                  |       Rolling Attack       |
 |              |   |             |                  |   Vertical Rolling Attack  |
-|     Guile    |   |   American  |  Special Forces  |         Sonic Boom         |
+|     Guile    | ![Guile](/assets/images/prj_streetfighter/004_Guile.png)  |   American  |  Special Forces  |         Sonic Boom         |
 |              |   |             |                  |         Flash Kick         |
-|      Ken     |   |   American  |  Shotokan Karate |          Fireball          |
+|      Ken     |  ![Ken](/assets/images/prj_streetfighter/005_Ken.png) |   American  |  Shotokan Karate |          Fireball          |
 |              |   |             |                  |        Dragon Punch        |
 |              |   |             |                  |       Hurricane Kick       |
-|    Chun Li   |   |   Chinese   |      Kung Fu     |       Lightning Kick       |
+|    Chun Li   |  ![Chun Li](/assets/images/prj_streetfighter/006_Chun_Li.png) |   Chinese   |      Kung Fu     |       Lightning Kick       |
 |              |   |             |                  |       Whirlwind Kick       |
 |              |   |             |                  |          Fireball          |
-|    Zangief   |   |   Russian   |     Wrestling    |    Spinning Clothesline    |
+|    Zangief   |  ![Zangief](/assets/images/prj_streetfighter/007_Zangief.png) |   Russian   |     Wrestling    |    Spinning Clothesline    |
 |              |   |             |                  | Turbo Spinning Clothesline |
 |              |   |             |                  |    Spinning Pile Driver    |
-|    Dhalsim   |   |    Indian   |       Yoga       |          Yoga Fire         |
+|    Dhalsim   |  ![Dhalsim](/assets/images/prj_streetfighter/008_Dhalsim.png) |    Indian   |       Yoga       |          Yoga Fire         |
 |              |   |             |                  |         Yoga Flame         |
 |              |   |             |                  |        Yoga Teleport       |
-|    Balrog    |   |   American  |      Boxing      |         Turn Punch         |
+|    Balrog    |  ![Balrog](/assets/images/prj_streetfighter/009_Balrog.png) |   American  |      Boxing      |         Turn Punch         |
 |              |   |             |                  |         Dash Punch         |
-|     Vega     |   |   Spanish   | Spanish Ninjitsu |          Claw Dive         |
+|     Vega     |  ![Vega](/assets/images/prj_streetfighter/010_Vega.png) |   Spanish   | Spanish Ninjitsu |          Claw Dive         |
 |              |   |             |                  |          Wall Leap         |
 |              |   |             |                  |          Claw Roll         |
-|     Sagat    |   |     Thai    |                  |          Muay Thai         |
+|     Sagat    | ![Sagat](/assets/images/prj_streetfighter/011_Sagat.png)  |     Thai    |                  |          Muay Thai         |
 |              |   |             |                  |       Tiger Uppercut       |
 |              |   |             |                  |         Tiger Knee         |
 |              |   |             |                  |         Tiger Shot         |
-|   M. Bison   |   |   Unknown   |                  |           Unknown          |
+|   M. Bison   |  ![Bison](/assets/images/prj_streetfighter/012_Bison.png) |   Unknown   |                  |           Unknown          |
 |              |   |             |                  |       Psycho Crusher       |
 |              |   |             |                  |        Scissor Kick        |
 |              |   |             |                  |         Head Stomp         |
