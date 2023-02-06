@@ -30,11 +30,9 @@
 |     Vega     |  ![Vega](/assets/images/prj_streetfighter/010_Vega.png) |   Spanish   | Spanish Ninjitsu |          Claw Dive         |
 |              |   |             |                  |          Wall Leap         |
 |              |   |             |                  |          Claw Roll         |
-|     Sagat    | ![Sagat](/assets/images/prj_streetfighter/011_Sagat.png)  |     Thai    |                  |          Muay Thai         |
-|              |   |             |                  |       Tiger Uppercut       |
-|              |   |             |                  |         Tiger Knee         |
+|     Sagat    | ![Sagat](/assets/images/prj_streetfighter/011_Sagat.png)  |     Thai    |     Muay Thai             |     Tiger Uppercut             |
+|              |   |             |                  |Tiger Knee |
 |              |   |             |                  |         Tiger Shot         |
-|   M. Bison   |  ![Bison](/assets/images/prj_streetfighter/012_Bison.png) |   Unknown   |                  |           Unknown          |
-|              |   |             |                  |       Psycho Crusher       |
-|              |   |             |                  |        Scissor Kick        |
-|              |   |             |                  |         Head Stomp         |
+|   M. Bison   |  ![Bison](/assets/images/prj_streetfighter/012_Bison.png) |   Unknown   |   Unknown               |    Psycho Crusher                  |
+|              |   |             |                  |  Scissor Kick           |
+|              |   |             |                  |    Head Stomp            |
