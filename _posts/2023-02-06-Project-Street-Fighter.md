@@ -4,7 +4,7 @@ This weekend my son challenged me to a Street Fighter II tournament on the SNES 
 
 Let us just say his got better game than I do, my love with Street Fighter is not really playing the game, but more around the characters the mixture of marital arts the way the game was developed and the game mechanics. 
 
-Below is a quick reference around the "Classic" twelve characters put together with the help of the [game manual] (https://www.nintendo.co.jp/clvs/manuals/en_us/index.html). 
+Below is a quick reference around the "Classic" tweleve charaters put together with the information from the [SNES Street Fighter II: Turbo manual](https://www.nintendo.co.jp/clvs/manuals/en_us/index.html).
 
 
 |    Fighter   |                                                              | Nationality |  Fighting Style  |        Special Moves       |
