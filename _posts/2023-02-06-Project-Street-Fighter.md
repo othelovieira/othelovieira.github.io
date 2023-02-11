@@ -7,9 +7,10 @@ Let us just say his got better game than I do, my love with Street Fighter is no
 Below is a quick reference around the "Classic" tweleve charaters put together with the information from the [SNES Street Fighter II: Turbo manual](https://www.nintendo.co.jp/clvs/manuals/en_us/index.html).
 
 
+
 |    Fighter   |                                                              | Nationality |  Fighting Style  |        Special Moves       |
 |:------------:|:------------------------------------------------------------:|:-----------:|:----------------:|:--------------------------:|
-|      Ryu     |      ![Ryu](/assets/images/prj_streetfighter/001_Ryu.png     |   Japanese  |  Shotokan Karate |          Fireball          |
+|      Ryu     |      ![Ryu](/assets/images/prj_streetfighter/001_Ryu.png)    |   Japanese  |  Shotokan Karate |          Fireball          |
 |              |                                                              |             |                  |        Dragon Punch        |
 |              |                                                              |             |                  |       Hurricane Kick       |
 |              |                                                              |             |                  |                            |
