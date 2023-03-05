@@ -1,0 +1,14 @@
+### Apple Command Line Tools - Field Notes
+
+The below is based on an Intel based MacBook running macOS Monterey (v12.6.2).
+
+|                            Task                            	|                         Command                         	|                       Commits                      	|
+|:----------------------------------------------------------:	|:-------------------------------------------------------:	|:--------------------------------------------------:	|
+| Check if Command Line Tools are installed via Terminal     	| xcode-select -p                                         	| If you get similar output the tools are installed. 	|
+| Check version that is installed via Terminal               	| xcode-select --version                                  	|                                                    	|
+|                                                            	|                                                         	|                                                    	|
+| Install Command Line Tools for Xcode via Terminal          	| xcode-select -install                                   	| Installs the latest tools.                         	|
+| Download latest Command Line Tools or check latest version 	| https://developer.apple.com/download/all/?q=command%20l 	| Apple Developer site - Command Line Tools serach   	|
+| Update Command Line Tools via Terminal                     	| softwareupdate -l                                       	| Runs Apple Software Update                         	|
+|                                                            	|                                                         	|                                                    	|
+| Uninstall Command Line Tools Via Terminal                  	| sudo rm -rf /Library/Developer/CommandLineTools         	| Path depends on results of xcode-select -p         	|
