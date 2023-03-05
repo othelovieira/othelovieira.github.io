@@ -12,3 +12,4 @@ The below is based on an Intel based MacBook running macOS Monterey (v12.6.2).
 | Update Command Line Tools via Terminal                     	| softwareupdate -l                                       	| Runs Apple Software Update                         	|
 |                                                            	|                                                         	|                                                    	|
 | Uninstall Command Line Tools Via Terminal                  	| sudo rm -rf /Library/Developer/CommandLineTools         	| Path depends on results of xcode-select -p         	|
+
