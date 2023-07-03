@@ -4,7 +4,7 @@ A few weeks ago, I was channel surfing and came across the NBA finals, I have al
 
 But for some reason I have drifted away from the NBA, I’m not really sure why, I guess it is what it is. 
 
-Two things I noticed about the game the players have become really huge and that might just be due to the TV quality and the team logos have changed from when I was really into the NBA.
+Two things I noticed about the game the players have become really huge and that might just be due to the TV quality and the team logos have changed from "back in the day".
 
 I put the below table together comparing the 1993-94 season to the latest of this writing 2022-23 season.
 
