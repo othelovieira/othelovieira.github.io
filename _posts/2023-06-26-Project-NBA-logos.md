@@ -6,7 +6,7 @@ But for some reason I have drifted away from the NBA, I’m not really sure why,
 
 Two things I noticed about the game the players have become really huge and that might just be due to the TV quality and the team logos have changed from "back in the day".
 
-I put the below table together comparing the 1993-94 season to the latest of this writing 2022-23 season.
+I put the below table together comparing the 1993-94 to the 2022-23 season logos.
 
 
 |                       Team                      |                                      1993-94 Season                                     |                                      2022-23 Season                                     |
