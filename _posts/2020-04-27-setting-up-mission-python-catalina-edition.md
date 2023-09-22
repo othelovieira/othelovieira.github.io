@@ -10,15 +10,13 @@ In my opinion, it’s still a great book to get into coding a game in Python usi
 
 The book explains how to set up your adventure on a Windows PC and Raspberry Pi, but been a macOS user, I decided to post the steps below on to set up your adventure on a Mac.
 
-macOS 10.15 (Catalina) now ships with Python3 but I would recommend installing a second version as not to “upset” the OS native shipped version.
-
 The book recommends Python 3.6.6 (at time of writing), I have based this post on Python 3.11.5
 
 ```
 *** Installing Python 3.11.5 ***
 ```
 
-Download Python 3.11.5 from https://www.python.org/downloads/macos/
+Download Python 3.11.5 from [Pyhon Release for macOS](https://www.python.org/downloads/macos/)
 
 Double click the installer and follow the on-screen instructions.
 
