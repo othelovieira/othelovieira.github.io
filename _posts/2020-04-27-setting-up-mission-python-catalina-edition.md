@@ -16,7 +16,7 @@ The book recommends Python 3.6.6 (at time of writing), I have based this post on
 *** Installing Python 3.11.5 ***
 ```
 
-Download Python 3.11.5 from [Pyhon Release for macOS](https://www.python.org/downloads/macos/)
+Download Python 3.11.5 from https://www.python.org/downloads/macos/)
 
 Double click the installer and follow the on-screen instructions.
 
@@ -34,7 +34,7 @@ You should get the below result-
 *** Install pip3 ***
 ```
 
-pip3 (23.2.1) is automatically installed with Python3 (3.11.5), I would recommend updating it to the latest, in Terminal>
+pip3 (23.2.1) is automatically installed with Python3 (3.11.5), I would recommend checking if there is a newer version, in Terminal>
 
 ```
   Type pip3 install --upgrade pip
