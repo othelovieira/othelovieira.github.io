@@ -1,6 +1,6 @@
 ### Setting up Mission Python – Catalina Edition
 
-Update: I have updated the below post to use Python 3.11.5 and has been tested on macOS Catalina, Big Sur and Monterey.
+Update: I have updated the below post to use Python 3.11.5 and has been tested on a Intel based MacBook Air running macOS Catalina, Big Sur and Monterey.
 
 A couple of years ago I picked up a copy of [Sean McManus’s – Mission Python: Code a Space Adventure Game](https://www.sean.co.uk/books/mission-python/index.shtm) from [No Starch Press](https://nostarch.com/missionpython).
 
