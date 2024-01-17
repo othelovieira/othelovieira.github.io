@@ -2,7 +2,7 @@
 
 A few years ago I published steps on how to setup Python and Pygame Zero on a Macbook (Intel based) to follow along with [Sean McManus’s – Mission Python: Code a Space Adventure Game](https://www.sean.co.uk/books/mission-python/index.shtm) from [No Starch Press](https://nostarch.com/missionpython).
 
-I recently upgraded to a MacBook Air (Apple Sillicon M1), and wondered if my steps would still work.
+I recently upgraded to a MacBook Air (M1 running Sonoma 14.2.1), and wondered if my steps would still work.
 
 Below are the updated steps -
 
