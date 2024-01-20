@@ -1,4 +1,4 @@
-### Setting up Mission Python – Apple Sillicon (M1) Edition
+### Setting up Mission Python – Apple Silicon (M1) Edition
 
 A few years ago I published steps on how to setup Python and Pygame Zero on a Macbook (Intel based) to follow along with [Sean McManus’s – Mission Python: Code a Space Adventure Game](https://www.sean.co.uk/books/mission-python/index.shtm) from [No Starch Press](https://nostarch.com/missionpython).
 
