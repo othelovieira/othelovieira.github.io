@@ -1,9 +1,9 @@
 ### Installing Homebrew on a MacBook Air (M1) - Field Notes
 
 
-I recently upgraded to a Macbook Air (M1), one of the first things I normally do macOS reload is install the Homebrew Package Manager.
+I recently had to install the Homebrew Package Manager on a Macbook Air (M1 running Sonoma 14.3).
 
-Below are the steps (Field Notes) that I run through via the Termainal (Cmd+Spacebar, type Terminal, press Enter).
+Below are the steps (Field Notes) that I ran through via the Termainal (Cmd+Spacebar, type Terminal, press Enter).
 
 
 Install Xcode Command Line Tools 
