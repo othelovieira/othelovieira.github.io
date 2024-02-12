@@ -13,8 +13,6 @@ xcode-select --install
 ```
 
 Install Homebrew [updated command link](https://brew.sh)
- 
-(updated command link)
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
