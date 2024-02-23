@@ -27,7 +27,7 @@ export PATH=/opt/homebrew/sbin:$PATH
 Check Homebrew is Installed and Ready
 
 ```
-Brew doctor
+brew doctor
 ```
 
 
