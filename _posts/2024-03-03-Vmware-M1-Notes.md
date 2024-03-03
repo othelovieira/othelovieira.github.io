@@ -43,3 +43,5 @@ You must have an Apple Silicon Mac running Fusion Pro or Player version 13.5 or 
   -  If you have troube connecting to the internet change the VMWare Network settings to Bridged Network (WI-FI).
 
   -  After Windows is running install the VMware Tools.
+  
+  - Recommended reading - [The Unofficial Fusion for Apple Silicon Companion Guide](https://communities.vmware.com/t5/VMware-Fusion-Documents/The-Unofficial-Fusion-for-Apple-Silicon-Companion-Guide/ta-p/2939907)
