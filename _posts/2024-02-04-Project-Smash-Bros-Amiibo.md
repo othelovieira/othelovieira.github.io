@@ -1,5 +1,11 @@
 ### Super Smash Bros. Ultimate – Amiibo Edition
 
+A few posts back I posted about [Super Smash Bros characters](https://othelovieira.com/2021/01/10/Project-Smash-Bros.html) and their origins. Then I saw a tweet (think that is what it is still called) by [@AmiiboNews](https://twitter.com/AmiiboNews/status/1741627609065161061) with all the characters in their Amiibo form. 
+
+Below is an updated post with their Amiibo's.
+
+
+
 | No 	|                                            Amiibo                                            	|           Fighter Name          	|                      First Game Appearance                      	|
 |:--:	|:--------------------------------------------------------------------------------------------:	|:-------------------------------:	|:---------------------------------------------------------------:	|
 |  1 	|                  ![Mario](/assets/images/prj_smashamiibo/001_Mario_Amb.jpg)                  	|              Mario              	|  Donkey Kong                                                    	|
