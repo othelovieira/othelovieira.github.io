@@ -2,59 +2,33 @@
 
 A few years ago I published steps on how to setup Python and Pygame Zero on a Macbook (Intel based) to follow along with [Sean McManus’s – Mission Python: Code a Space Adventure Game](https://www.sean.co.uk/books/mission-python/index.shtm) from [No Starch Press](https://nostarch.com/missionpython).
 
-I recently did the setup on a MacBook Air (M1 running Sonoma 14.2.1).
+I recently did the setup on a MacBook Air (M1 running Sonoma 14.4.1).
 
 Below are the updated steps -
 
+**Installing Python 3.12.3**
 
-```
-*** Installing Python 3.12.1 ***
-```
+  - Download Python 3.12.1 from https://www.python.org/downloads/macos/
+  - Double click the installer and follow the on-screen instructions.
+  - Once installed Open Terminal (Cmd+Spacebar, type Terminal, press Enter).
+  - Type which python3, at the prompt.
 
-Download Python 3.12.1 from https://www.python.org/downloads/macos/
+     You should get the result - /Library/Frameworks/Python.framework/Versions/3.12/bin/python3
 
-Double click the installer and follow the on-screen instructions.
+**Installing pip3**
 
-Once installed Open Terminal (Cmd+Spacebar, type Terminal, press Enter).
+  pip3 (24.0) is automatically installed with Python3 (3.13.3), I would recommend checking if there is a newer     version.
 
-```
-  Type which python3, at the prompt
-```
-You should get the below result-
+  - In the Terminal type pip3 install --upgrade pip
+  - Type pip3 --version
 
-/usr/local/bin/python3
+    You should get the result - pip 24.0 from         /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pip (python 3.12)
 
+**Installing Pygame Zero**
 
-```
-*** Install pip3 ***
-```
+  - In the Terminal type pip3 install pgzero
 
-pip3 (23.2.1) is automatically installed with Python3 (3.11.5), I would recommend checking if there is a newer version, in Terminal>
-
-```
-  Type pip3 install --upgrade pip
-
-  Type pip3 --version
-```
-You should get the below result-
-
-pip 23.2.1 from /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pip (python 3.11)
-
-```
-Install Pygame Zero
-```
-
-In Terminal>
-```
-  Type pip3 install pgzero
-
-  Type pip3 show pgzero
-```
-You should see the below in the results-
-
-Name: pgzero
-
-Version: 1.2.1
+    You should get the result - Successfully installed numpy-1.26.4 pgzero-1.2.1 pygame-2.5.2
 
 Once the above has been completed, you are ready to test Mission Python on your Mac.
 
@@ -62,15 +36,16 @@ Download the Mission Code file from https://www.sean.co.uk/books/mission-python/
 
 Once the file has downloaded and unzipped from within Terminal move to the escape folder (I unzipped the into my Downloads folder to test).
 
-  Open Terminal (Cmd+Spacebar, type Terminal, press Enter).
+  - Open Terminal (Cmd+Spacebar, type Terminal, press Enter).
+  - Type cd Downloads
+  - Type cd escape
+  - Type pgzrun escape.py
 
-```
-  Type cd Downloads
+Once you have done the above the game should start. You are now ready to begin your adventure with Mission Python. 
 
-  Type cd escape
+**Field Notes**
 
-  Type pgzrun escape.py
+I recommend installing Python as per above and not via Homebrew, I have picked up issues with a blank screen when pygame is installed. 
 
-```
-
-Once you have done the above the game should start. You are now ready to begin your adventure with Mission Python.
+    
+            
