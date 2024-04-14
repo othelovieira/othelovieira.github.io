@@ -34,7 +34,7 @@ Once the above has been completed, you are ready to test Mission Python on your 
 
 Download the Mission Code file from https://www.sean.co.uk/books/mission-python/index.shtm
 
-Once the file has downloaded and unzipped from within Terminal move to the escape folder (I unzipped the into my Downloads folder to test).
+Once the file has downloaded and unzipped from within Terminal move to the escape folder (I unzipped the file into my Downloads folder to test).
 
   - Open Terminal (Cmd+Spacebar, type Terminal, press Enter).
   - Type cd Downloads
