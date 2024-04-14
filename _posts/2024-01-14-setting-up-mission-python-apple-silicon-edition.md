@@ -8,7 +8,7 @@ Below are the updated steps -
 
 **Installing Python 3.12.3**
 
-  - Download Python 3.12.1 from https://www.python.org/downloads/macos/
+  - Download Python 3.12.3 from https://www.python.org/downloads/macos/
   - Double click the installer and follow the on-screen instructions.
   - Once installed Open Terminal (Cmd+Spacebar, type Terminal, press Enter).
   - Type which python3, at the prompt.
