@@ -45,6 +45,6 @@ Once you have done the above the game should start. You are now ready to begin y
 
 **Field Notes**
 
-I recommend installing Python as per above and not via Homebrew, I have picked up issues with pygame when installed via Homebrew.
+I recommend installing Python as per above and not via Homebrew, when I first did the post I picked up many issues with pygame installed via Homebrew, that is why I went "old school".
     
             
