@@ -10,7 +10,7 @@
 |                                             Avengers #15                                             |
 |                 ![Avengers_15 Image](/assets/images/prj_big_marvels/Avengers_15.jpg)                 |
 |                                     Black Widow &amp; Hawkeye #4                                     |
-|   ![Black_Widow_Hawkeye_44 Image](/assets/images/prj_big_marvels/Black_Widow_&amp;_Hawkeye_44.jpg)   |
+|   ![Black_Widow_Hawkeye_44 Image](/assets/images/prj_big_marvels/Black_Widow_Hawkeye_44.jpg)         |
 |                                          Captain America #10                                         |
 |          ![Captain_America_10 Image](/assets/images/prj_big_marvels/Captain_America_10.jpg)          |
 |                                           Captain Marvel #9                                          |
