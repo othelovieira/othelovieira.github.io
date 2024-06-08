@@ -1,6 +1,6 @@
 ### Scottie Young’s Big Marvels - 10ish Year Edition
 
-|                                          Big Marvel's Poster                                         |
+|                                          Big Marvels Poster                                         |
 |:----------------------------------------------------------------------------------------------------:|
 |         ![Poster Image](/assets/images/prj_big_marvels/Skottie_Youngs_Big_Marvel_Poster.jpg)         |
 |                                        Amazing Spider-Man #51                                        |
