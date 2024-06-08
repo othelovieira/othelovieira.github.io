@@ -32,7 +32,7 @@
 |                                        Invincible Iron Man #19                                       |
 |      ![Invincible_Iron-Man_19 Image](/assets/images/prj_big_marvels/Invincible_Iron-Man_19.jpg)      |
 |                                      Jackpot &amp; Black Cat #4                                      |
-|   ![Jackpot_&amp;_Black_Cat_4 Image](/assets/images/prj_big_marvels/Jackpot_Black_Cat_4.jpg)   |
+|   ![Jackpot_&amp;_Black_Cat_4 Image](/assets/images/prj_big_marvels/Jackpot_Black_Cat_4.jpg)         |
 |                                     Midnight Sons: Blood Hunt #2                                     |
 |  ![Midnight_Sons_Blood_Hunt_2 Image](/assets/images/prj_big_marvels/Midnight_Sons_Blood_Hunt_2.jpg)  |
 |                                     Miles Morales: Spider-Man #21                                    |
