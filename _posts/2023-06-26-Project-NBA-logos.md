@@ -1,4 +1,4 @@
-### NBA Team Logos - Nostalgic Dad Edition
+### NBA Team Logos - Nostalgic Edition
 
 A few weeks ago, I was channel surfing and came across the NBA finals, I have always loved and still do love basketball.
 
