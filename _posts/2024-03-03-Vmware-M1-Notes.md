@@ -1,4 +1,4 @@
-### Installing Windows 11 on Apple Silicon with VMware Fusion - Indy Edition
+### Installing Win 11 on Apple Silicon with VMware Fusion - Indy Edition
 
 ![VMWare Image](/assets/images/prj_vmware_indy/VMware_Indy.jpg)
 
