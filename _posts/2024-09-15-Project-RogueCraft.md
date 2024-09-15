@@ -13,7 +13,7 @@ Note - You do not require the Kickstart ROMs to play the game.
 
 - Download FS-UAE for macOS - ARM64 - https://fs-uae.net/download#macosx
 
-	      Both files - FS-UAE + FS-UAE Launcher
+	Both files - FS-UAE + FS-UAE Launcher
 
 - Install both files.
 
