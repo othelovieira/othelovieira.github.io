@@ -1,4 +1,4 @@
-### Setting up FS-USE to play RogueCraft (Amiga) on Apple Silicon - Field Notes
+### Setting up FS-USE to play RogueCraft (Amiga) - Apple Silicon
 
 ![RogueCraft Image](/assets/images/prj_roguecraft/RogueCraft_Title.jpg)
 
