@@ -1,4 +1,4 @@
-### Setting up FS-USE to play RogueCraft (Amiga) - Apple Silicon
+### Setting up FS-USE to play RogueCraft (Amiga) on Apple Silicon
 
 ![RogueCraft Image](/assets/images/prj_roguecraft/RogueCraft_Title.jpg)
 
@@ -11,15 +11,15 @@ Note - You do not require the Kickstart ROMs to play the game.
 
 **Download and Install FS-UAE:**
 
-- Download FS-UAE for macOS - ARM64
+- Download FS-UAE for macOS - ARM64 - https://fs-uae.net/download#macosx
 
 	      Both files - FS-UAE + FS-UAE Launcher
 
 - Install both files.
 
-**Download and copy RogueCraft (Amiga):**
+**Download RogueCraft (Amiga):**
 
-- Purchase/Download RogueCraft (Amiga)
+- DownlRogueCraft (Amiga) - https://thalamusdigital.itch.io/roguecraft
 	
 
 **Setup FS-UAE to play:**
