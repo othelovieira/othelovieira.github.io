@@ -1,9 +1,5 @@
 ### The Karate Kid Street Rumble - Pixel Edition
 
-
-
-<p style="text-align: center;">"Man who catch fly with chopstick accomplish anything." - Mr. Miyagi</p>
-
 ![Karate Kid Street Rumble](/assets/images/prj_karate_kid/Karate_Kid_001.jpg)
 
 Growing up in the 80’s, I watched and absolutely loved the Karate Kid Movies (The jury is still out on Kobra Kai). 
@@ -30,5 +26,6 @@ Not to give away any spoilers, I've screen grabbed the four main character sheet
 
 ![Karate Kid Street Rumble](/assets/images/prj_karate_kid/Karate_Kid_005.jpg)
 
+<p style="text-align: center;">"Man who catch fly with chopstick accomplish anything." - Mr. Miyagi</p>
 
 ![Karate Kid Street Rumble](/assets/images/prj_karate_kid/Karate_Kid_006.jpg)
