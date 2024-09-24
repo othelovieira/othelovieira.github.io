@@ -2,7 +2,7 @@
 
 ![Karate Kid Street Rumble](/assets/images/prj_karate_kid/Karate_Kid_001.jpg)
 
-Growing up in the 80’s, I watched and absolutely loved the Karate Kid Movies (The jury is still out on Kobra Kai). 
+Growing up in the 80’s, I watched and absolutely loved the Karate Kid movies. 
 
 Last Friday Odaclick Game Studio released [“The Karate Kid: Street Rumble”](https://store.steampowered.com/app/2549780/The_Karate_Kid_Street_Rumble/) which is an homage to the original series and “old skool” beat ‘em ups. 
 
