@@ -19,7 +19,7 @@ Note - You do not require the Kickstart ROMs to play the game.
 
 **Download RogueCraft (Amiga):**
 
-- DownlRogueCraft (Amiga) - https://thalamusdigital.itch.io/roguecraft
+- RogueCraft (Amiga) - https://thalamusdigital.itch.io/roguecraft
 	
 
 **Setup FS-UAE to play:**
