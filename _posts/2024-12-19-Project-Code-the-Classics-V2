@@ -1,0 +1,8 @@
+**Setting up a Raspberry Pi 400 with a 64-bit ARM Operating System**
+
+ - Download the 64-bit Raspberry Pi OS image 
+ - Flash the image to an SD card using the Raspberry Pi Imager
+ - Insert the SD card into your Pi 400
+ - Boot up your Pi 400 and complete the initial setup
+
+**Checking that alll
