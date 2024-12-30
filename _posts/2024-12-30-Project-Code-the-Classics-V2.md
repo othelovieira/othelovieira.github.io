@@ -14,7 +14,7 @@ I cover the below platforms:
 -	macOS 15.2 (Apple Silicon, but should also work on Intel based Mac's)
 -	Windows 11 (VMware Fusion 13.5 Pro, but should also work on bare-metal installs Win 10/11) - Coming Soon
 
- ## Raspberry PI 400
+ **Raspberry PI 400**
 
   I originally run the code on Raspberry Pi OS (32-bit) bookworm but found the games very sluggish, so would recommend 
   upgrading to the (Raspberry Pi OS (64-bit) bookworm.
@@ -48,7 +48,7 @@ I cover the below platforms:
 
   The above Python 3 and Pygame versions are the defualts installed on Raspberry PI OS (as of this writing).
 
-  ## Install a Joystick Keyboard Mapper (Optional)
+  **Install a Joystick Keyboard Mapper (Optional)**
 
   I normally do this as I prefer playing games via a controller and map the keys, but as mentioned this is optional.
 
@@ -58,7 +58,7 @@ I cover the below platforms:
 
      sudo-get install qjoypad
 
-  ## Playing the Games
+  **Playing the Games**
 
   Since we just want to play the games for now, I will clone the "Games" repository under the Downloads directory
 
@@ -89,7 +89,7 @@ I cover the below platforms:
     cd beatstreets
     pgzrun beatstreets.py
 
-  ## macOS 15.2
+  **macOS 15.2**
 
   **Installing Python 3.12.2**
 
@@ -128,11 +128,11 @@ I cover the below platforms:
 
     Successfully installed numpy-2.2.1 pgzero-1.2.1 pygame-2.6.1
 
-   ## Install a Joystick Keyboard Mapper (Optional)
+   **Install a Joystick Keyboard Mapper (Optional)**
 
    As mentioned in the PI 400 install, I like using a Joystick Keyboard Mapper for macOS I use [Joystick Mapper](https://apps.apple.com/za/app/joystick-mapper/id528183797?mt=12) (it's a little old but still works)
 
-   ## Playing the Games (same as the PI 400 install)
+   **Playing the Games (same as the PI 400 install)**
 
   Since we just want to play the games for now, I will clone the "Games" repository under the Downloads directory
 
