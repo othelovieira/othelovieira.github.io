@@ -88,6 +88,10 @@ I cover the below platforms:
 
     cd beatstreets
     pgzrun beatstreets.py
+
+  ## macOS 15.2
+
+  **Installing Python 3.12.2**
     
 
   
