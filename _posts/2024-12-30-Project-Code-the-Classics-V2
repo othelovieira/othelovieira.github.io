@@ -1,5 +1,21 @@
 ### Setting up Code the Classic - Volume II - Field Guide
 
+![Code the Classics - Volume 2](/assets/images/prj_ctcv2/Code_the_Classics_vol_2_Fix.jpg)
+
+A few weeks ago, I was lucky enough to be gifted a physical copy of Code the Classics – Volume II published by Raspberry PI Press.
+
+I had originally purchased the e-version via Humble Bundle but struggled to get any of the code to run, going to say it was due to “e-book fatigue”.
+
+I’ve put the below steps together to help anyone wanting to get the games up and running quickly.
+
+I cover the below platforms:
+
+-	Raspberry PI 400 (Raspberry Pi OS (64-bit) - bookworm)
+-	macOS 15.2 (Apple Silicon, but should also work on Intel based Mac's)
+-	Windows 11 (via VMware Fusion 13.5 Pro, but should also work on bare-metal installs)
+
+
+
 
 
 **Setting up a Raspberry Pi 400 with a 64-bit ARM Operating System**
