@@ -8,7 +8,7 @@ I had originally purchased the e-version via [Humble Bundle](https://www.humbleb
 
 I’ve put the below steps together to help anyone wanting to get the games up and running quickly.
 
-If you just want to play the games, not code review or tinkering, I have added how to play the games standalone at the of the post.
+If you just want to play the games, not code review or tinker with the code, I have added how to play the games standalone at the end of the post.
 
   I originally run the code on Raspberry Pi OS (32-bit) bookworm but found the games very sluggish, so would recommend 
   upgrading to the (Raspberry Pi OS (64-bit) bookworm.
