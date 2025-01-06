@@ -1,4 +1,4 @@
-## Setting up Code the Classic - Volume II - PI 400 Guide
+## Setting up Code the Classics - Volume II - PI 400 Guide
 
 ![Code the Classics - Volume 2](/assets/images/prj_ctcv2/Code_the_Classics_vol_2_Fix.jpg)
 
