@@ -78,8 +78,8 @@ I’ve put the below steps together to help anyone wanting to get the games up a
 
     cd Downloads 
 
-  Clone the "Games" from the books GitHub repository (we will be using the git version that is pre-installed on macOS)
-
+  Clone the "Games" from the books GitHub repository
+  
     git clone https://github.com/raspberrypipress/Code-the-Classics-Vol2
 
   Once the clone has completed move into the games direcorty
