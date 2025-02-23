@@ -1,6 +1,6 @@
 ### Marvel Rivals - Character Art Edition
 
-Updated [23-02-2025] - Added The Thing
+Updated [23-02-2025] - Added The Thing and Human Torch
 
 I got back into comics about 23 years ago, it was when I bought a copy of the Spider-Man DVD and watched the “Extra Feature Disc”, absolutely loved the artwork of John Romita Jr. and then later, fell in love with Humberto Ramos's take on Spider-Man.
 
