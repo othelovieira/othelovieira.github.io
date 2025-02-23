@@ -1,5 +1,7 @@
 ### Marvel Rivals - Character Art Edition
 
+Updated [23-02-2024] - Added The Thing
+
 I got back into comics about 23 years ago, it was when I bought a copy of the Spider-Man DVD and watched the “Extra Feature Disc”, absolutely loved the artwork of John Romita Jr. and then later, fell in love with Humberto Ramos's take on Spider-Man.
 
 About a month ago [NetEase Games](https://www.neteasegames.com) and [Marvel Entertainment](https://www.marvel.com) released [Marvel Rivals](https://www.marvelrivals.com) a Superhero Team-based PVP Shooter, I love the take on the character art.
@@ -9,14 +11,14 @@ Below is list of the current characters (as of this writing) and their roles.
 
 
 
-|                                                                                                 |                                          **Vanguard**                                         |                                                                                         |
+|                                                                                                 |                                            **Vanguard**                                           |                                                                                         |
 |:-----------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------:|
 | ![Captain America](/assets/images/prj_marvelrivals/vanguard/Captain_America_Hero_Portrait.webp) | ![Doctor Strange](/assets/images/prj_marvelrivals/vanguard/Doctor_Strange_Hero_Portrait.webp) |       ![Groot](/assets/images/prj_marvelrivals/vanguard/Groot_Hero_Portrait.webp)       |
 |                                         Captain America                                         |                                         Doctor Strange                                        |                                          Groot                                          |
 |            ![Hulk](/assets/images/prj_marvelrivals/vanguard/Hulk_Hero_Portrait.webp)            |        ![Magneto](/assets/images/prj_marvelrivals/vanguard/Magneto_Hero_Portrait.webp)        | ![Peni Parker](/assets/images/prj_marvelrivals/vanguard/Peni_Parker_Hero_Portrait.webp) |
 |                                               Hulk                                              |                                            Magneto                                            |                                       Peni Parker                                       |
-|            ![Thor](/assets/images/prj_marvelrivals/vanguard/Thor_Hero_Portrait.webp)            |          ![Venom](/assets/images/prj_marvelrivals/vanguard/Venom_Hero_Portrait.webp)          |                                                                                         |
-|                                               Thor                                              |                                             Venom                                             |                                                                                         |
+|       ![The Thing](/assets/images/prj_marvelrivals/vanguard/The_Thing_Hero_Portrait.webp)       |           ![Thor](/assets/images/prj_marvelrivals/vanguard/Thor_Hero_Portrait.webp)           |       ![Venom](/assets/images/prj_marvelrivals/vanguard/Venom_Hero_Portrait.webp)       |
+|                                            The Thing                                            |                                              Thor                                             |                                          Venom                                          |
 
 
 
