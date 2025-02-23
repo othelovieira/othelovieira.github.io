@@ -1,12 +1,12 @@
 ### Marvel Rivals - Character Art Edition
 
-Updated [23-02-2024] - Added The Thing
+Updated [23-02-2025] - Added The Thing
 
 I got back into comics about 23 years ago, it was when I bought a copy of the Spider-Man DVD and watched the “Extra Feature Disc”, absolutely loved the artwork of John Romita Jr. and then later, fell in love with Humberto Ramos's take on Spider-Man.
 
 About a month ago [NetEase Games](https://www.neteasegames.com) and [Marvel Entertainment](https://www.marvel.com) released [Marvel Rivals](https://www.marvelrivals.com) a Superhero Team-based PVP Shooter, I love the take on the character art.
 
-Below is list of the current characters (as of this writing) and their roles.
+Below is list of the current characters and their roles.
 
 
 
