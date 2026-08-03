@@ -1,4 +1,4 @@
-### Classic Game Postmortems - GDC Vault Edition ###
+### Classic Game Postmortems - GDC Vault Edition
 
 |  GDC 	|                          Game Title                         	|                                       Speaker(s)                                      	|
 |:----:	|:-----------------------------------------------------------:	|:-------------------------------------------------------------------------------------:	|
