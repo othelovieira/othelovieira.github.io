@@ -60,9 +60,21 @@ hr {
   }
 
   .site-title,
-  .site-title:visited,
+  .site-title:visited {
+    color: #e0e0e0 !important;
+  }
+
+  .page-link,
+  .site-nav .page-link,
   .site-nav a,
-  .post-link {
+  .site-header a {
+    color: #e0e0e0 !important;
+  }
+
+  .post-content,
+  .page-content,
+  .post-list,
+  .wrapper {
     color: #e0e0e0;
   }
 
@@ -86,14 +98,4 @@ hr {
 
   blockquote {
     color: #b0b0b0;
-    border-left-color: #555555;
-  }
-
-  .post_navi .post_navi-item {
-    color: #e0e0e0 !important;
-  }
-
-  .post_navi-arrow {
-    color: #888888;
-  }
-}
+    border-left
