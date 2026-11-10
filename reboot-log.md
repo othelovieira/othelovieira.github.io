@@ -4,8 +4,14 @@ title: Reboot Log
 permalink: /reboot-log/
 ---
 
-A collection of short notes, discoveries, project updates, and observations.
+# Reboot Log
+
+{% for log in site.rebootlog reversed %}
+
+## {{ log.date | date: "%d %B %Y" }}
+
+{{ log.content }}
 
 ---
 
-*Entries coming soon.*
+{% endfor %}
