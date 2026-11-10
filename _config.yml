@@ -40,3 +40,7 @@ defaults:
       type: post
     values:
       tags: Other
+
+collections:
+  rebootlog:
+    output: true
