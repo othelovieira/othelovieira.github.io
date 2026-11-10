@@ -6,7 +6,7 @@ permalink: /reboot-log/
 
 {% for log in site.rebootlog reversed %}
 
-## {{ log.date | date: "%d %B %Y" }}
+## {{ log.date | date: "%d-%b-%Y" }}
 
 {{ log.content }}
 
