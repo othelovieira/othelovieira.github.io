@@ -20,7 +20,8 @@ body {
 }
 
 .dos-window {
-    width:760px;
+    box-sizing:border-box;
+    width:min(798px, calc(100vw - 32px));
     padding:15px;
     border:4px double #55FFFF;
     background:#0000AA;
@@ -36,9 +37,16 @@ body {
     margin-bottom:12px;
 }
 
+.device-info {
+    margin-bottom:12px;
+    text-align:center;
+    color:#FFFF55;
+    font-size:13px;
+}
+
 .disk-map {
     display:grid;
-    grid-template-columns:repeat(50,1fr);
+    grid-template-columns:repeat(50,minmax(0,1fr));
     gap:2px;
     background:#000055;
     border:2px solid #AAAAAA;
@@ -47,7 +55,9 @@ body {
 }
 
 .cluster {
-    width:12px;
+    box-sizing:border-box;
+    width:100%;
+    min-width:0;
     height:14px;
     font-size:11px;
     line-height:14px;
@@ -134,6 +144,32 @@ button:active {
     border-style:inset;
 }
 
+@media (max-width: 600px) {
+    .dos-window {
+        padding:10px;
+    }
+
+    .disk-map {
+        gap:1px;
+        padding:5px;
+    }
+
+    .cluster {
+        height:clamp(5px, 2.4vw, 14px);
+        font-size:clamp(4px, 1.8vw, 11px);
+        line-height:1;
+    }
+
+    .status-panel {
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .controls {
+        flex-direction:column;
+    }
+}
+
 </style>
 </head>
 
@@ -144,6 +180,8 @@ button:active {
     <div class="header">
         NORTON SPEED DISK - Drive C: [MS-DOS 3.30]
     </div>
+
+    <div id="deviceInfo" class="device-info" role="status" aria-live="polite"></div>
 
     <div id="diskMap" class="disk-map"></div>
 
@@ -207,6 +245,20 @@ const TOTAL_CLUSTERS = COLS * ROWS;
 let disk = [];
 let intervalId = null;
 let optimizePointer = 15;
+
+function updateDeviceInfo() {
+    const mobileHint = navigator.userAgentData?.mobile;
+    const isMobile = typeof mobileHint === "boolean"
+        ? mobileHint
+        : window.matchMedia("(pointer: coarse)").matches ||
+          (
+              window.matchMedia("(max-width: 768px)").matches &&
+              navigator.maxTouchPoints > 0
+          );
+
+    document.getElementById("deviceInfo").textContent =
+        `Running on: ${isMobile ? "Mobile device" : "Desktop"}`;
+}
 
 const SYMBOLS = {
     empty: "·",
@@ -390,6 +442,8 @@ function startDefrag() {
     }, 200);
 }
 
+updateDeviceInfo();
+window.addEventListener("resize", updateDeviceInfo);
 initDisk();
 
 </script>
