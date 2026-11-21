@@ -1,1 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Norton Speed Disk Simulator (1988)</title>
+<style>
+  body {
+    background-color: #0000AA;
+    color: #FFFFFF;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    user-select: none;
+  }
 
+  .dos-window {
+    border: 4px double #55FFFF;
+    background-color: #0000AA;
+    padding: 15px;
+    width: 760px;
+    box-shadow: 12px 12px 0px #000000;
+  }
+
+  .header {
+    background-color: #55FFFF;
+    color: #0000AA;
+    font-weight: bold;
+    text-align: center;
+    padding: 4px;
+    margin-bottom: 12px;
+  }
+
+  .disk-map {
+    display: grid;
+    grid-template-columns: repeat(50, 1fr);
+    gap: 2px;
+    background-color: #000055;
+    border: 2px solid #AAAAAA;
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+
+  .cluster {
+    width: 12px;
+    height: 14px;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  /* Classic DOS Block States */
+  .empty      { background-color: #000055; color: #555555; }
+  .fragmented { background-color: #AAAA00; color: #000000; }
+  .optimized  { background-color: #55FFFF; color: #0000AA; }
+  .unmovable  { background-color: #AA0000; color: #FFFFFF; }
+  .reading    { background-color: #55FF55; color: #000000; }
+  .writing    { background-color: #FF5555; color: #FFFFFF; }
+
+  .status-panel {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #55FFFF;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+
+  .legend {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 20px;
+  }
+
+  .legend-item { display: flex; align-items: center; gap: 8px; }
+  .swatch { width: 14px; height: 14px; display: inline-block; text-align: center; font-size: 11px; }
+
+  .controls {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  button {
+    background-color: #AAAAAA;
+    color: #000000;
+    border: 2px outset #FFFFFF;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 6px 14px;
+    cursor: pointer;
+  }
+  button:active { border-style: inset; }
+</style>
+</head>
+<body>
+
+<div class="dos-window">
+  <div class="header">NORTON SPEED DISK - Drive C: [MS-DOS 3.30]</div>
+  
+  <div id="diskMap" class="disk-map"></div>
+
+  <div class="status-panel">
+    <div>
+      <div>Status: <span id="statusText" style="color:#FFFF55">READY</span></div>
+      <div>Cluster: <span id="clusterNum">0000</span> / 750</div>
+      <div>Progress: <span id="progressPct">0</span>%</div>
+    </div>
+
+    <div class="legend">
+      <div class="legend-item"><span class="swatch optimized">■</span> Optimized</div>
+      <div class="legend-item"><span class="swatch reading">r</span> Reading</div>
+      <div class="legend-item"><span class="swatch fragmented">▒</span> Fragmented</div>
+      <div class="legend-item"><span class="swatch writing">W</span> Writing</div>
+      <div class="legend-item"><span class="swatch empty">·</span> Unused</div>
+      <div class="legend-item"><span class="swatch unmovable">X</span> Unmovable</div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button onclick="startDefrag()">[F1] Start Optimization</button>
+    <button onclick="initDisk()">[F2] Scramble Disk</button>
+    <button onclick="toggleSound()">Sound: <span id="soundState">OFF</span></button>
+  </div>
+</div>
+
+<script>
+  const TOTAL_CLUSTERS = 750; // 50 columns x 15 rows
+  let disk = [];
+  let intervalId = null;
+  let soundEnabled = false;
+  let audioCtx = null;
+
+  const SYMBOLS = {
+    empty: '·',
+    fragmented: '▒',
+    optimized: '■',
+    unmovable: 'X',
+    reading: 'r',
+    writing: 'W'
+  };
+
+  function playSeekBeep(freq = 180) {
+    if (!soundEnabled) return;
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = 'sawtooth';
+    osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+    gain.gain.setValueAtTime(0.03, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.03);
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start();
+    osc.stop(audioCtx.currentTime + 0.03);
+  }
+
+  function toggleSound() {
+    soundEnabled = !soundEnabled;
+    document.getElementById('soundState').textContent = soundEnabled ? 'ON' : 'OFF';
+  }
+
+  function initDisk() {
+    clearInterval(intervalId);
+    intervalId = null;
+    disk = [];
+
+    for (let i = 0; i < TOTAL_CLUSTERS; i++) {
+      const rand = Math.random();
+      if (i < 15) {
+        disk.push('unmovable'); // Boot sector / system files at start
+      } else if (rand < 0.04) {
+        disk.push('unmovable'); // Scattered hidden/system files
+      } else if (rand < 0.55) {
+        disk.push('fragmented');
+      } else {
+        disk.push('empty');
+      }
+    }
+    document.getElementById('statusText').textContent = 'FRAGMENTED';
+    document.getElementById('progressPct').textContent = '0';
+    render();
+  }
+
+  function render(readIdx = -1, writeIdx = -1) {
+    const mapEl = document.getElementById('diskMap');
+    mapEl.innerHTML = '';
+
+    disk.forEach((state, idx) => {
+      const div = document.createElement('div');
+      let displayState = state;
+      if (idx === readIdx) displayState = 'reading';
+      if (idx === writeIdx) displayState = 'writing';
+
+      div.className = `cluster ${displayState}`;
+      div.textContent = SYMBOLS[displayState];
+      mapEl.appendChild(div);
+    });
+  }
+
+  function startDefrag() {
+    if (intervalId) return;
+    document.getElementById('statusText').textContent = 'OPTIMIZING...';
+
+    let writePointer = 0;
+
+    intervalId = setInterval(() => {
+      // Advance writePointer past already-optimized or unmovable blocks
+      while (writePointer < TOTAL_CLUSTERS && 
+            (disk[writePointer] === 'optimized' || disk[writePointer] === 'unmovable')) {
+        writePointer++;
+      }
+
+      // Find the next fragmented block after writePointer
+      let readPointer = writePointer;
+      while (readPointer < TOTAL_CLUSTERS && disk[readPointer] !== 'fragmented') {
+        readPointer++;
+      }
+
+      // Check if finished
+      if (readPointer >= TOTAL_CLUSTERS) {
+        clearInterval(intervalId);
+        intervalId = null;
+        document.getElementById('statusText').textContent = 'OPTIMIZATION COMPLETE!';
+        document.getElementById('progressPct').textContent = '100';
+        render();
+        return;
+      }
+
+      // If writePointer is already pointing to a fragmented block, mark it optimized in-place
+      if (writePointer === readPointer) {
+        disk[writePointer] = 'optimized';
+        render(-1, writePointer);
+        playSeekBeep(240);
+      } else {
+        // Move fragmented block into the empty slot at writePointer
+        disk[writePointer] = 'optimized';
+        disk[readPointer] = 'empty';
+        render(readPointer, writePointer);
+        playSeekBeep(140 + (readPointer % 100));
+      }
+
+      document.getElementById('clusterNum').textContent = String(writePointer).padStart(4, '0');
+      document.getElementById('progressPct').textContent = Math.floor((writePointer / TOTAL_CLUSTERS) * 100);
+    }, 35); // Speed in milliseconds per cluster move
+  }
+
+  initDisk();
+</script>
+</body>
+</html>
