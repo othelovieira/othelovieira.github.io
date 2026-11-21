@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Speed Disk
+title: Speed Disk Simulator
 permalink: /speeddisk/
 ---
 
