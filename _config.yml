@@ -44,3 +44,5 @@ defaults:
 collections:
   rebootlog:
     output: true
+  speeddisk:
+    output: true
