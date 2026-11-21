@@ -37,13 +37,6 @@ body {
     margin-bottom:12px;
 }
 
-.device-info {
-    margin-bottom:12px;
-    text-align:center;
-    color:#FFFF55;
-    font-size:13px;
-}
-
 .disk-map {
     display:grid;
     grid-template-columns:repeat(50,minmax(0,1fr));
@@ -181,8 +174,6 @@ button:active {
         NORTON SPEED DISK - Drive C: [MS-DOS 3.30]
     </div>
 
-    <div id="deviceInfo" class="device-info" role="status" aria-live="polite"></div>
-
     <div id="diskMap" class="disk-map"></div>
 
     <div class="status-panel">
@@ -245,20 +236,6 @@ const TOTAL_CLUSTERS = COLS * ROWS;
 let disk = [];
 let intervalId = null;
 let optimizePointer = 15;
-
-function updateDeviceInfo() {
-    const mobileHint = navigator.userAgentData?.mobile;
-    const isMobile = typeof mobileHint === "boolean"
-        ? mobileHint
-        : window.matchMedia("(pointer: coarse)").matches ||
-          (
-              window.matchMedia("(max-width: 768px)").matches &&
-              navigator.maxTouchPoints > 0
-          );
-
-    document.getElementById("deviceInfo").textContent =
-        `Running on: ${isMobile ? "Mobile device" : "Desktop"}`;
-}
 
 const SYMBOLS = {
     empty: "·",
@@ -442,8 +419,6 @@ function startDefrag() {
     }, 200);
 }
 
-updateDeviceInfo();
-window.addEventListener("resize", updateDeviceInfo);
 initDisk();
 
 </script>
