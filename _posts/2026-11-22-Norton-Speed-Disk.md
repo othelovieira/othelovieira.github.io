@@ -1,6 +1,6 @@
 ## Why Norton Utilities Never Left My Disk Folder - Speed Disk Edition
 
-![SpeedDisk](./speeddisk/SD_2026_11_22.png)
+![SpeedDisk](/speeddisk/SD_2026_11_22.png)
 
 This little project started with a YouTube video.
 
