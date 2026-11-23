@@ -4,8 +4,6 @@ title: Tools
 permalink: /tools/
 ---
 
-# Tools
-
 A collection of retro computing utilities and experiments.
 
 [Norton Speed Disk Simulator](/tools/speeddisk/)
