@@ -46,3 +46,5 @@ collections:
     output: true
   speeddisk:
     output: true
+    tools:
+    output: true
