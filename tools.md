@@ -8,4 +8,4 @@ permalink: /tools/
 
 A collection of retro computing utilities and experiments.
 
-<a href="https://othelovieira.com/_tools/speeddisk/index.html">Norton Speed Disk Simulator</a>
+<a href="_tools/speeddisk/index.html">Norton Speed Disk Simulator</a>
