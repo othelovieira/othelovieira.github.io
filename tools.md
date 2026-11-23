@@ -4,16 +4,8 @@ title: Tools
 permalink: /tools/
 ---
 
----
-layout: page
-title: Tools
-permalink: /tools/
----
-
 # Tools
 
 A collection of retro computing utilities and experiments.
 
-## Available Tools
-
-- /_tools/speeddisk/
+<a href="https://othelovieira.com/_tools/speeddisk/index.html">Norton Speed Disk Simulator</a>
