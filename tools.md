@@ -8,4 +8,4 @@ A collection of retro computing utilities and experiments.
 
 [Norton Speed Disk Simulator](/tools/speeddisk/)
 
-[Norton Disk Doctor Simulator (work in progress)](/tools/diskdoctor/)
+
