@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Norton Disk Doctor 6.0</title>
+
+<style>
+body{
+    margin:0;
+    background:#000080;
+    color:#ffffff;
+    font-family:"Courier New",monospace;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#screen{
+    width:920px;
+    height:700px;
+    background:#000080;
+    border:3px solid #c0c0c0;
+    box-sizing:border-box;
+}
+
+.titlebar{
+    background:#c0c0c0;
+    color:#000080;
+    padding:4px 10px;
+    font-weight:bold;
+}
+
+.content{
+    padding:10px;
+}
+
+.status{
+    line-height:1.5em;
+}
+
+canvas{
+    display:block;
+    margin-top:10px;
+    border:1px solid #808080;
+    background:#000040;
+}
+
+.progressWrap{
+    margin-top:10px;
+    border:2px solid #808080;
+    height:20px;
+}
+
+.progress{
+    width:0%;
+    height:100%;
+    background:#00ffff;
+}
+
+.stats{
+    margin-top:10px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    row-gap:4px;
+}
+
+.log{
+    margin-top:10px;
+    border:2px solid #808080;
+    background:#000040;
+    height:180px;
+    overflow:auto;
+    padding:5px;
+}
+
+.good{color:#00ff00;}
+.error{color:#ffff00;}
+.bad{color:#ff4444;}
+
+.dialog{
+    position:absolute;
+    width:500px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:#c0c0c0;
+    color:#000;
+    border:3px solid #fff;
+    display:none;
+    z-index:10;
+}
+
+.dialogTitle{
+    background:#000080;
+    color:#fff;
+    padding:4px;
+    font-weight:bold;
+}
+
+.dialogBody{
+    padding:10px;
+    line-height:1.5em;
+}
+
+.dialogButtons{
+    text-align:center;
+    padding:10px;
+}
+
+button{
+    font-family:inherit;
+    margin:0 10px;
+    padding:5px 20px;
+}
+
+#summary{
+    position:absolute;
+    width:700px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:#000080;
+    color:white;
+    border:3px solid #c0c0c0;
+    padding:20px;
+    display:none;
+    white-space:pre-line;
+}
+
+.footer{
+    margin-top:10px;
+    color:#00ffff;
+}
+</style>
+</head>
+<body>
+
+<div id="screen">
+
+<div class="titlebar">
+Norton Disk Doctor 6.0
+</div>
+
+<div class="content">
+
+<div id="phase">
+Initializing...
+</div>
+
+<div id="cluster">
+Preparing scan...
+</div>
+
+<canvas id="surface" width="800" height="260"></canvas>
+
+<div class="progressWrap">
+<div id="progress" class="progress"></div>
+</div>
+
+<div class="stats">
+<div>Files Checked: <span id="files">0</span></div>
+<div>Directories Checked: <span id="dirs">0</span></div>
+
+<div>Cross Links: <span id="cross">0</span></div>
+<div>Lost Clusters: <span id="lost">0</span></div>
+
+<div>FAT Errors: <span id="fat">0</span></div>
+<div>Bad Sectors: <span id="badcount">0</span></div>
+
+<div>Errors Found: <span id="errors">0</span></div>
+<div>Errors Repaired: <span id="repaired">0</span></div>
+</div>
+
+<div class="log" id="log">
+Norton Disk Doctor loaded...
+</div>
+
+<div class="footer">
+R = Repair | I = Ignore | ESC = Close Report
+</div>
+
+</div>
+
+</div>
+
+<div id="dialog" class="dialog">
+
+<div class="dialogTitle">
+Disk Error Detected
+</div>
+
+<div class="dialogBody" id="dialogText">
+</div>
+
+<div class="dialogButtons">
+<button onclick="repairCurrent()">Repair</button>
+<button onclick="ignoreCurrent()">Ignore</button>
+</div>
+
+</div>
+
+<div id="summary"></div>
+
+<script>
+
+const canvas = document.getElementById('surface');
+const ctx = canvas.getContext('2d');
+
+const cols = 80;
+const rows = 26;
+
+const cw = canvas.width / cols;
+const ch = canvas.height / rows;
+
+let timer;
+
+let paused = false;
+let finished = false;
+
+let filesChecked = 0;
+let dirsChecked = 0;
+
+let crossLinks = 0;
+let lostClusters = 0;
+let fatErrors = 0;
+
+let badSectors = 0;
+
+let errorsFound = 0;
+let repairedErrors = 0;
+let ignoredErrors = 0;
+
+let scanIndex = 0;
+
+let currentError = null;
+
+const stages = [
+"Checking Boot Record...",
+"Checking Partition Table...",
+"Checking File Allocation Table...",
+"Checking Root Directory...",
+"Checking Directories...",
+"Checking Files...",
+"Checking Free Space...",
+"Checking Surface..."
+];
+
+let stage = 0;
+let stageTicks = 0;
+let surfaceMode = false;
+
+function log(msg){
+ let div=document.getElementById('log');
+ div.innerHTML += "<br>"+msg;
+ div.scrollTop=div.scrollHeight;
+}
+
+function drawGrid(){
+
+ ctx.fillStyle="#000040";
+ ctx.fillRect(0,0,canvas.width,canvas.height);
+
+ for(let y=0;y<rows;y++){
+  for(let x=0;x<cols;x++){
+   ctx.strokeStyle="#202060";
+   ctx.strokeRect(x*cw,y*ch,cw,ch);
+  }
+ }
+}
+
+drawGrid();
+
+function updateStats(){
+
+ document.getElementById('files').textContent=filesChecked;
+ document.getElementById('dirs').textContent=dirsChecked;
+ document.getElementById('cross').textContent=crossLinks;
+ document.getElementById('lost').textContent=lostClusters;
+ document.getElementById('fat').textContent=fatErrors;
+ document.getElementById('badcount').textContent=badSectors;
+ document.getElementById('errors').textContent=errorsFound;
+ document.getElementById('repaired').textContent=repairedErrors;
+}
+
+function randomFilesystemError(){
+
+ if(Math.random()>0.02) return;
+
+ const type=[
+ "Cross-linked file",
+ "Lost cluster chain",
+ "Invalid FAT entry"
+ ][Math.floor(Math.random()*3)];
+
+ errorsFound++;
+
+ if(type==="Cross-linked file") crossLinks++;
+ if(type==="Lost cluster chain") lostClusters++;
+ if(type==="Invalid FAT entry") fatErrors++;
+
+ currentError={
+   type:type
+ };
+
+ pauseForError();
+ updateStats();
+}
+
+function pauseForError(){
+
+ paused=true;
+
+ document.getElementById("dialog").style.display="block";
+
+ document.getElementById("dialogText").innerHTML=
+     currentError.type +
+     "<br><br>Recommended action: Repair";
+}
+
+function repairCurrent(){
+
+ repairedErrors++;
+
+ log("<span class='good'>Repaired: "
+      + currentError.type +
+      "</span>");
+
+ currentError=null;
+
+ document.getElementById("dialog").style.display="none";
+
+ paused=false;
+
+ updateStats();
+}
+
+function ignoreCurrent(){
+
+ ignoredErrors++;
+
+ log("<span class='error'>Ignored: "
+      + currentError.type +
+      "</span>");
+
+ currentError=null;
+
+ document.getElementById("dialog").style.display="none";
+
+ paused=false;
+}
+
+function drawSector(i,color){
+
+ let x=i%cols;
+ let y=Math.floor(i/cols);
+
+ ctx.fillStyle=color;
+ ctx.fillRect(
+    x*cw+1,
+    y*ch+1,
+    cw-2,
+    ch-2
+ );
+}
+
+function finishReport(){
+
+ finished=true;
+
+ let report=
+`DISK DOCTOR REPORT
+
+Files Checked:       ${filesChecked}
+Directories Checked: ${dirsChecked}
+
+Cross-linked Files:  ${crossLinks}
+Lost Clusters:       ${lostClusters}
+FAT Errors:          ${fatErrors}
+
+Bad Sectors:         ${badSectors}
+
+Errors Found:        ${errorsFound}
+Errors Repaired:     ${repairedErrors}
+Errors Ignored:      ${ignoredErrors}
+
+Analysis Complete
+
+Press ESC`;
+
+ document.getElementById("summary").innerText=report;
+ document.getElementById("summary").style.display="block";
+}
+
+function tick(){
+
+ if(paused || finished) return;
+
+ document.getElementById("phase").textContent=
+     stages[stage];
+
+ if(!surfaceMode){
+
+  stageTicks++;
+
+  if(stage===4)
+      dirsChecked+=Math.floor(Math.random()*3);
+
+  if(stage===5)
+      filesChecked+=Math.floor(Math.random()*15);
+
+  randomFilesystemError();
+
+  updateStats();
+
+  let pct=((stage*100)+(stageTicks))/8;
+
+  document.getElementById('progress')
+      .style.width=Math.min(pct,100)+"%";
+
+  if(stageTicks>100){
+
+      stageTicks=0;
+      stage++;
+
+      if(stage>=7){
+
+          surfaceMode=true;
+
+          log(
+           "<span class='good'>Beginning surface analysis...</span>"
+          );
+      }
+  }
+
+  return;
+ }
+
+ let r=Math.random();
+
+ if(r<0.96){
+
+    drawSector(scanIndex,"#00aa00");
+
+ }else if(r<0.99){
+
+    drawSector(scanIndex,"#aaaa00");
+
+ }else{
+
+    drawSector(scanIndex,"#aa0000");
+
+    badSectors++;
+    errorsFound++;
+
+    log(
+     "<span class='bad'>Bad sector found at cluster "
+     + scanIndex +
+     "</span>"
+    );
+ }
+
+ scanIndex++;
+
+ document.getElementById("cluster").textContent=
+     "Cluster "
+     + scanIndex +
+     " of "
+     + (cols*rows);
+
+ updateStats();
+
+ let progress=
+     (scanIndex/(cols*rows))*100;
+
+ document.getElementById("progress")
+     .style.width=progress+"%";
+
+ if(scanIndex >= cols*rows){
+
+     finishReport();
+ }
+}
+
+document.addEventListener("keydown",(e)=>{
+
+ if(document.getElementById("dialog").style.display==="block")
+ {
+     if(e.key==="r" || e.key==="R")
+         repairCurrent();
+
+     if(e.key==="i" || e.key==="I")
+         ignoreCurrent();
+ }
+
+ if(e.key==="Escape")
+ {
+     document.getElementById("summary").style.display="none";
+ }
+});
+
+timer=setInterval(tick,40);
+
+</script>
+</body>
+</html>
