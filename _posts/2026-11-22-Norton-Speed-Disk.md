@@ -26,7 +26,7 @@ Looking back, Norton Utilities wasn't just software. It was part of how I learne
 
 And apparently, all it took was one YouTube video and a Speed Disk simulator to bring those memories flooding back.
 
-<a href="https://othelovieira.com/speeddisk/">Link to the Speed Disk Simulator</a>
+<a href="https://othelovieira.com/tools/speeddisk/">Link to the Speed Disk Simulator</a>
 
 <div align="center">
 This post was written with ❤️ and ☕️
